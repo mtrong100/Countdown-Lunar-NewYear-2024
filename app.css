@@ -35,7 +35,8 @@ h6 {
   overflow-wrap: break-word;
 }
 body {
-  background: url(./img/black-texture-heroscreen-548542.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+    url(./img/newBg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,11 +48,14 @@ body {
   font-family: "Poppins", sans-serif;
   /* background-image: linear-gradient(to right, #fc5776, #6a5af9); */
 }
+:root {
+  --primary: #f62682;
+}
 #btn {
   border: none;
   outline: none;
   background-color: #333;
-  color: greenyellow;
+  color: var(--primary);
   padding: 15px 35px;
   margin-top: 30px;
   font-size: 20px;
@@ -61,7 +65,7 @@ body {
   transition: 0.2s linear;
 }
 #btn:hover {
-  background-color: greenyellow;
+  background-color: var(--primary);
   color: #333;
 }
 .heading {
@@ -70,7 +74,7 @@ body {
 }
 h1 {
   font-size: 200px;
-  color: greenyellow;
+  color: var(--primary);
 }
 h4 {
   font-weight: 600;
@@ -101,12 +105,17 @@ p {
   border-radius: 100%;
 }
 .number-color {
-  color: greenyellow;
+  color: var(--primary);
   font-size: 80px;
 }
 .number-color,
 .text-color {
   user-select: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.text-color {
+  font-size: 25px;
 }
 /* style hover */
 .countdown-box:before {
@@ -172,7 +181,7 @@ p {
     border: none;
     outline: none;
     background-color: #333;
-    color: greenyellow;
+    color: var(--primary);
     padding: 15px 35px;
     margin-top: 30px;
     font-size: 20px;
@@ -199,7 +208,7 @@ p {
   }
   h1 {
     font-size: 100px;
-    color: greenyellow;
+    color: var(--primary);
   }
   h4 {
     font-weight: 600;
@@ -242,7 +251,7 @@ p {
   h1 {
     margin-top: 0px;
     font-size: 130px;
-    color: greenyellow;
+    color: var(--primary);
   }
   h4 {
     font-weight: 600;
@@ -268,7 +277,7 @@ p {
   h1 {
     margin-top: -100px;
     font-size: 100px;
-    color: greenyellow;
+    color: var(--primary);
   }
   h4 {
     margin-top: -30px;

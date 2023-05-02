@@ -1,5 +1,4 @@
-
-let tetAmLich = new Date("Jan 22, 2023 00:00:00").getTime();
+let tetAmLich = new Date("February 10, 2024 00:00:00").getTime();
 function newYear() {
   /*Lấy thời gian ngày hiện tại (mily giây) */
   let ngayHienTai = new Date().getTime();
@@ -37,12 +36,12 @@ const btn = document.querySelector("#btn");
 const song = document.querySelector("#song");
 let playing = true;
 
-btn.addEventListener("click", function() {
-    if(playing) {
-      song.play();
-      playing = false;
-    } else {
-      song.pause();
-      playing = true;
-    }
+btn.addEventListener("click", function () {
+  if (playing) {
+    song.play();
+    playing = false;
+  } else {
+    song.pause();
+    playing = true;
+  }
 });
